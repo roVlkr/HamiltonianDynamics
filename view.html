@@ -1,0 +1,20 @@
+<html style="margin: 0;">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Hamilton Dynamics</title>
+    </head>
+
+    <body style="text-align: center; margin: 0; padding: 0; padding-top: 50px; background: #efefef;">
+        <div>
+            <canvas id="canvas" width="600" height="600" style="background: white; border: 2px solid black"/>
+        </div>
+        <br>
+        <label id="mode-display">Creation Mode: mass</label>
+        <!--Scripts-->
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script>
+            new Controller(document.getElementById('canvas'), document.getElementById('mode-display'));
+        </script>
+    </body>
+</html>
